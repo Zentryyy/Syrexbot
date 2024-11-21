@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta name="description" content="Syrex Zene Bot">
+    <meta name="keywords" content="Discord,Bot,Stick,Zene,Discord Zene,Discord Zene Bot,Discord Bot,Syrex,Hydra,Mee6,Dyno,Carl">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal | Syrex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/icon" href="./img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/SLEvents Bot Logo.png">
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index.html'; // Átirányítás angol oldalra
+            } else if (lang === 'hu') {
+                window.location.href = 'hu.html'; // Átirányítás magyar oldalra
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">Syrex</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#top">Főoldal</a></li>
+                <li><a href="#features">Funkciók</a></li>
+                <li><a href="#commands">Parancsok</a></li>
+                <li><a href="#faq">GYIK</a></li>
+                <li><a href="#support">Támogatás</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button id="lang-en" onclick="switchLanguage('en')">EN</button>
+            <button id="lang-hu" onclick="switchLanguage('hu')">HU</button>
+        </div>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=964506903046656130&permissions=1644703513921&scope=bot" class="btn-area">Meghívás</a>
+    </header>
+    <!-- navbar end -->
+    <!-- home -->
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">Syrex discord bot</h1>
+                <h3 style="margin-left: 0;">Fedezd fel a Syrex Discord Botot – a tökéletes társ a szerveredhez!</h3>
+                <p class="bot-description">A Syrex egy sokoldalú és intuitív Discord bot, amelynek célja, hogy fokozza a közösséged élményét, izgalmasabbá és interaktívabbá téve azt. Legyen szó zenelejátszásról, moderálásról, játékokról vagy közösségi információkról, a Syrex minden igényedet kielégíti.</p>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=964506903046656130&permissions=1644703513921&scope=bot" class="home-btn">Hozzáadás Discordhoz</a>
+            </div>
+            <div class="home-img">
+                <img src="img/botlogo.png" class="home-img" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+    <!-- features -->
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>A legjobbat nyújtjuk</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="bx bx-music"></i>
+                    <h4>Zenelejátszás</h4>
+                    <p>Zene streamelése népszerű platformokról, mint a YouTube és a SoundCloud.</p>
+                    <p>Dalok lejátszása, szüneteltetése, átugrása és ismétlése egyszerűen.</p>
+                    <p>Lejátszási listák létrehozása és kezelése a zökkenőmentes zenehallgatás érdekében.</p>
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>Könnyen használható</h4>
+                    <p>A Syrex intuitív parancsokat kínál, amelyek megkönnyítik a felhasználók számára a használatot, bármilyen szinten is legyenek.</p>
+                    <p>Ha bármikor segítségre van szükséged, egyszerűen írd be az !help (parancs) parancsot az azonnali útmutatás érdekében.</p>
+                    <p>Élvezd a zökkenőmentes élményt bonyolult beállítások nélkül.</p>
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Folyamatosan frissítve</h4>
+                    <p>A Syrex rendszeresen frissül, új funkciók és fejlesztések bevezetésével.</p>
+                    <p>Aktívan figyelünk a felhasználói visszajelzésekre a bot javítása érdekében.</p>
+                    <p>Figyelj a izgalmas frissítésekre, és soha ne maradj le a legújabb funkciókról!</p>
+                </div>
+                <!-- feature end -->
+                <div class="feature feature3">
+                    <i class="bx bx-shield"></i>
+                    <h4>Moderálási eszközök</h4>
+                    <p>Automatizáld a moderálási feladatokat testreszabható parancsokkal.</p>
+                    <p>Automatikus figyelmeztetések és üzenetszűrés beállítása.</p>
+                    <p>A tagok engedélyeinek és szerepeinek kezelése közvetlenül a boton keresztül.</p>
+                </div>
+                <div class="feature feature2">
+                    <i class="bx bx-info-circle"></i>
+                    <h4>Információs parancsok</h4>
+                    <p>Friss hírek, időjárás és egyéb releváns információk elérése.</p>
+                    <p>Parancsok használata a szerver statisztikáinak, tagok számának és egyéb adatoknak a lekérdezésére.</p>
+                    <p>Gyors válaszok adása a gyakran ismételt kérdésekre.</p>
+                </div>
+                <div class="feature feature1">
+                    <i class="bx bx-layout"></i>
+                    <h4>Felhasználóbarát felület</h4>
+                    <p>Könnyen használható parancsstruktúra világos utasításokkal.</p>
+                    <p>Intuitív tervezés új és tapasztalt felhasználók számára egyaránt.</p>
+                    <p>Reagáló támogatás bármilyen probléma vagy kérdés esetén.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class="content">
+                    <h2>Interaktív help menü</h2>
+                    <p>Az <b>Interaktív help menü</b> egy rendkívül hasznos eszköz a Syrex Discord bot számára, amely lehetővé teszi a felhasználók számára, hogy gyorsan és könnyen megtalálják a szükséges információkat a bot különböző funkcióiról és parancsairól. Az alábbi kategóriák segítenek a felhasználóknak eligazodni a bot képességei között, és biztosítják, hogy mindenki a lehető legjobban kihasználhassa a Syrex adta lehetőségeket. Minden egyes kategória különböző parancsokat és funkciókat tartalmaz, így a felhasználók könnyedén navigálhatnak a bot funkciói között, legyen szó szórakozásról, szerverkezelésről vagy moderálásról.</p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+                <img src="img/image.png" alt="Bot Image 1">
+            </div>
+            <div class="section">
+                <img src="img/ima1ge.png" alt="Bot Image 2">
+                <div class="content">
+                    <h2>Szerkeszthető üdvözlő üzenet</h2>
+                    <p>A <b>Welcome Message</b>(Üdvözlő üzenet) lehetőséget ad arra, hogy az új tagok egyedi üdvözlést kapjanak, amikor csatlakoznak a Discord szerverhez. Az alábbiakban bemutatok egy embed stílusú üdvözlő üzenetet, amelyet könnyedén testreszabhatsz. <b> Az üdvözlő üzenet színe, képe, szövege és egyéb elemei mind testreszabhatók, hogy a szerver hangulatának és arculatának megfelelően jelenjenek meg.</b> </p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                    <h2>Covid Parancs</h2>
+                    <p>A COVID-19 adatlekérdező funkció a botunk egyik izgalmas és hasznos szolgáltatása, amely lehetővé teszi, hogy a felhasználók egyszerűen lekérdezhessék a legfrissebb COVID-19 statisztikákat – akár országokra vonatkozóan, akár globálisan. Ezt a funkciót azoknak a felhasználóknak kínáljuk, akik naprakész információra van szükségük a világjárvány helyzetéről, legyen szó fertőzésekről, halálozások számáról, vagy az aktív esetek állásáról.
+                        <p> <b>Funkció bemutatása</b> <br>
+                            A botunk lehetőséget biztosít arra, hogy különböző országok adatait kérdezzük le a COVID-19 világjárvánnyal kapcsolatban. A felhasználók egyszerű parancsokkal kérhetik le az alábbi adatokat:</p>
+                       
+                        <p>
+                        Fertőzöttek száma – Az összes regisztrált fertőzött személy száma. <br>
+                        Halálos áldozatok – Azoknak a személyeknek a száma, akik a betegség következtében elhunytak. <br>
+                        Gyógyultak száma – Azoknak a személyeknek a száma, akik sikeresen felépültek a betegségből. <br>
+                        Aktív esetek – Azok az esetek, amelyek még mindig aktívak, és a betegek kezelés alatt állnak. <br>
+                        Globális adatok – A világ minden tájáról származó összesített adatokat is lekérdezhetjük, így megismerhetjük a teljes járványglobális helyzetét. <br>
+                        <b>Hogyan működik?</b> <br>
+                        A bot ezen funkciója az egyik legnépszerűbb eszköze a felhasználóknak, hogy valós idejű, pontos és részletes COVID-19 adatokat kapjanak. A parancsok egyszerűen használhatóak, és a felhasználók kérhetik az adatokat a következő módon:
+                    </p>
+                    <p>
+                        <b>Parancsok:</b> <br>
+                        <b> Lekérdezés egy adott országra vonatkozóan</b> <br>
+                        Példa parancs: <br>
+                        <u><b>!covid hungary </b></u> <br>
+                        Ez a parancs visszaadja Magyarország legfrissebb COVID-19 statisztikáit, mint a fertőzöttek száma, halálozások, gyógyultak és aktív esetek. <br>
+                        
+                        <b>Globális adatok lekérdezése</b>
+                        Példa parancs: <br>
+                        <u><b>!covid global</b></u> <br>
+                        Ez a parancs a világ összes országának adatát egy összegző módon adja vissza, és bemutatja a globális helyzetet: összes fertőzés, halálozások és gyógyultak száma.</p>
+                    </p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+                <img src="img/image.jfif" alt="Bot Image 3">
+            </div>
+            <div class="section">
+                <img src="img/3.png" alt="Bot Image 4">
+                <div class="content">
+                    <h2>Moderációs parancsok</h2>
+                    <p>
+                        A <b>Moderációs parancsok </b> a bot egyik legfontosabb funkciója, amely a szerver adminisztrátorok és moderátorok számára biztosít eszközöket a Discord szerverek hatékony kezelésére, szabályozására és moderálására. Ezek a parancsok lehetővé teszik a szerver különböző aspektusainak testreszabását, mint például a tagok kezelése, a szerver információk lekérdezése, üdvözlő üzenetek beállítása, a szabályok figyelemmel kísérése és még sok más.</p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                    <h2>Raid Mód Védelem</h2>
+                    <p>
+                        A <b>Raid Mód Védelem</b> funkció egy erőteljes eszköz, amelyet a Discord szerverek védelmére terveztek, hogy megakadályozza a nagy léptékű, zűrzavart okozó támadásokat, amelyeket gyakran "raid"-nek neveznek. A raid-ek jellemzően egy nagy számú rosszindulatú felhasználó gyors csatlakozását jelentik egy szerverhez, akik spamelnek, zűrzavart okoznak vagy káoszt idéznek elő.
+                        
+                        Ez a funkció lehetővé teszi a szerver adminisztrátorai számára, hogy gyorsan és hatékonyan aktiválják a védelmi intézkedéseket, amikor támadást észlelnek, biztosítva, hogy a szerver biztonságos maradjon, és a tagok ne szenvedjenek el rosszindulatú viselkedést. Miután engedélyezve van, a Raid Mód Védelem egy sor automatizált választ aktivál, amelyek segítenek korlátozni a raid hatását.
+                    </p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+                <img src="img/image.jpg" alt="Bot Image 2">
+            </div>
+            <div class="section">
+                <img src="img/ima222ge.png" alt="Bot Image 4">
+                <div class="content">
+                    <h2>Extra Parancsok</h2>
+                    <p>A <b>Extra parancsok</b> funkció a Syrex Discord bot egyedi és fejlett parancsokat kínáló eszköze, amely a felhasználói élmény fokozására szolgál, és <b>további irányítást és szórakoztató lehetőségeket biztosít a szerver adminisztrátorai és tagjai számára.</b> Ezek a parancsok túlmutatnak az alapvető moderációs és szerverkezelési eszközökön, lehetőséget adva a testreszabásra, szórakozásra és további funkciók hozzáadására a Discord szerverhez.</p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                    <h2>Általános Parancsok</h2>
+                    <p>A <b>Általános Parancsok</b> funkció a Syrex Discord bot alapját képezi, és egy sor alapvető eszközt kínál, amelyek megkönnyítik a szerver kezelését és az interakciót. Ezek a parancsok a leggyakrabban használtak, és az alapvető funkciókat biztosítják mind a szerver adminisztrátorai, mind a rendszeres felhasználók számára, lehetővé téve a zökkenőmentes működést és a fontos információk gyors elérését.</p>
+                    <button class="button" id="scrollToTop">Hívd be a botot</button>
+                </div>
+                <img src="img/image222.png" alt="Bot Image 2">
+            </div>
+        </div>
+            
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- features end -->
+    <!-- commands -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Összes parancs</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- Command Category -->
+        <nav>
+            <div class="categorys">
+                <span class="category active" data-name="all">Összes</span>
+                <span class="category" data-name="music">Zene</span>
+                <span class="category" data-name="info">Információ</span>
+                <span class="category" data-name="filter">Szűrő</span>
+                <span class="category" data-name="setup">Beállítás</span> 
+                <span class="category" data-name="soon">Hamarosan</span>  
+            </div>
+        </nav>
+        <!-- Commands -->
+        <div class="commands">
+            <!-- Command Start -->
+            <div class="command" data-name="soon">
+                <h2>Hamarosan</h2><span>
+                    <div class="cmdinfo">
+                        <p>Hamarosan új parancsok! Pl.: 🎉 GiveAway, 💡 Suggestion</p>
+                    </div>
+                    <div class="cmdali">
+                        <p> <b>                  Syrex Zene</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="info">
+                <h2>Clear</h2><span>
+                    <div class="cmdinfo">
+                        <p>Üzenetek töröl a csatornában</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>c , clears</b> </p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>Help</h2><span>
+                    <div class="cmdinfo">
+                        <p>Felsorolja az összes parancsot, információval</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>h , helps</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="setup">
+                <h2>Reset</h2><span>
+                    <div class="cmdinfo">
+                        <p>Törli az összes beállított prefixet/configurációt</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>hardreset</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="setup">
+                <h2>Setup</h2><span>
+                    <div class="cmdinfo">
+                        <p>Egyedülálló zenei beállítást hoz létre a dalok kéréséhez!</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>musicsetup</b> </p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>Invite</h2><span>
+                    <div class="cmdinfo">
+                        <p>Bot meghívási linkje</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>inv</b> </p>
+                    </div>
+                </span>
+            </div>
+            <!-- Command End -->
+            <!-- Command Start -->
+            <div class="command" data-name="info">
+                <h2>News</h2><span>
+                    <div class="cmdinfo">
+                        <p>Hírek a botról</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>n , new , update</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="info">
+                <h2>Ping</h2><span>
+                    <div class="cmdinfo">
+                        <p>Megjeleníti a várakozási időt és az API-pinget</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>latency</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="info">
+                <h2>Uptime</h2><span>
+                    <div class="cmdinfo">
+                        <p>Shows bot uptime</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>uptimes</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="info">
+                <h2>Vote</h2><span>
+                    <div class="cmdinfo">
+                        <p>Vote for the bot</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>v , voting</b> </p>
+                    </div>
+                </span>
+            </div>
+                        <div class="command" data-name="info">
+                <h2>Addrelated</h2><span>
+                    <div class="cmdinfo">
+                        <p>Adds a similar song of the current Track</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>addrelated , related , addsimilar , similar</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Autoplay</h2><span>
+                    <div class="cmdinfo">
+                        <p>Enables autoplay - random similar songs</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>ap , randomsong</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Playlist</h2><span>
+                    <div class="cmdinfo">
+                        <p>Play some premade GOOD Playlists!</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>botpl , pl</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Clearqueue</h2><span>
+                    <div class="cmdinfo">
+                        <p>Clears the Queue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>clearqu</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Custom</h2><span>
+                    <div class="cmdinfo">
+                        <p>Add / Remove / Play a Custom created playlist!</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>-</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Forward</h2><span>
+                    <div class="cmdinfo">
+                        <p>Forwards the Song forward: seconds</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>fwd , for</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Grab</h2><span>
+                    <div class="cmdinfo">
+                        <p>Saves current song in your DM</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>yoink , saves</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Join</h2><span>
+                    <div class="cmdinfo">
+                        <p>Joins the Voice Channel</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>connect , summon</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Jump</h2><span>
+                    <div class="cmdinfo">
+                        <p>Jump to a song in the Queue</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>skipto</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Loop</h2><span>
+                    <div class="cmdinfo">
+                        <p>Enables loop for off</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>repeat</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Moveme</h2><span>
+                    <div class="cmdinfo">
+                        <p>Moves you to the BOT, if playing something</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>mm , mvm , mvy</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Mycustom</h2><span>
+                    <div class="cmdinfo">
+                        <p>Add / Remove / Play a Custom created playlist!</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>-</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Nowplaying</h2><span>
+                    <div class="cmdinfo">
+                        <p>Shows current song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>current , np</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Pause</h2><span>
+                    <div class="cmdinfo">
+                        <p>Pauses the song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>break</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Play</h2><span>
+                    <div class="cmdinfo">
+                        <p>Plays a song, from youtube, soundcloud or whatever, or search it, or play a playlist</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>p</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Playsc</h2><span>
+                    <div class="cmdinfo">
+                        <p>Plays a song, from soundcloud, whatever, or search it, or play a playlist</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>psc , playsoundclound</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Playskip</h2><span>
+                    <div class="cmdinfo">
+                        <p>Plays new song and skips current</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>ps , xbox</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Queue</h2><span>
+                    <div class="cmdinfo">
+                        <p>Shows the current Queue of Track</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>qu</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Radio</h2><span>
+                    <div class="cmdinfo">
+                        <p>Play one of the 200 Radio Station, or see them by just typing  +radio  in the chat!</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>-</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Removetrack</h2><span>
+                    <div class="cmdinfo">
+                        <p>Removes a Specific Track</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>rt</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Replay</h2><span>
+                    <div class="cmdinfo">
+                        <p>Replays the current song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>restart</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Resume</h2><span>
+                    <div class="cmdinfo">
+                        <p>Resume the song</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>r</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Rewind</h2><span>
+                    <div class="cmdinfo">
+                        <p>Rewinds the Song back: seconds</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>rew</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Search</h2><span>
+                    <div class="cmdinfo">
+                        <p>Youtube-ban keresi a zenét</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>-</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>searchrelated</h2><span>
+                    <div class="cmdinfo">
+                        <p>Megkeresi az aktuális szám hasonló dalait, és kiválasztja, melyiket szeretnéd</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>searchrelated , searchsimilar</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Searchsc</h2><span>
+                    <div class="cmdinfo">
+                        <p>Soundcloud-ban keresi a zenét</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>hsc</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Seek</h2><span>
+                    <div class="cmdinfo">
+                        <p>Zenében való előreugrás > mp</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>-</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Shuffle</h2><span>
+                    <div class="cmdinfo">
+                        <p>Zenei playlist megkeverése</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>mix</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Skip</h2><span>
+                    <div class="cmdinfo">
+                        <p>Jelenlegi zene átugrása</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>s</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Status</h2><span>
+                    <div class="cmdinfo">
+                        <p>Megjeleníti a sor állapotát/beállításait</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>settings</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Stop</h2><span>
+                    <div class="cmdinfo">
+                        <p>Abbahagyja a zene lejátszását, és elhagyja a hangcsatornát.</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>leave</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="music">
+                <h2>Volume</h2><span>
+                    <div class="cmdinfo">
+                        <p>Hangerő szabályozása</p>
+                    </div>
+                    <div class="cmdali">
+                        <p>Rövidítések <b>vol</b> </p>
+                    </div>
+                </span>
+            </div>
+            <div class="command" data-name="filter">
+                <h2>Soon i listed all filter cmd</h2><span>
+                <img src="https://cdn.discordapp.com/attachments/935908370655883274/964658828408934450/unknown.png" alt="alternatetext">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+	<div class="faq">
+    <div class="curve">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1" id="faq"
+                d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <div class="wrapper reveal">
+        <main id="questions" role="main">
+            <div class="title">
+                <div class="th1">
+                    <h1>Gyakran Ismételt Kérdések</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <input type="text" class="live-search-box" placeholder="Keresés egy válaszra..." />
+            <!-- kérdés kezdete -->
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">1. Mi az a Syrex?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">A Syrex egy sokoldalú Discord bot, amely a zenei lejátszást, moderálási eszközöket, interaktív játékokat és információs parancsokat kínál, hogy javítsa a szerver élményét.</p>
+            </div>
+            <!-- kérdés vége -->
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">2. Hogyan hívom be a Syrexet botot a szerveremre?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">A Syrexet a weboldalunkon található meghívó linkre kattintva hívhatod meg. Győződj meg arról, hogy rendszergazdai jogosultságokkal rendelkezel a discord szervereden, hogy a szükséges jogosultságokat hozzá tud rendelni discord bothoz.</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">3. Milyen zenei platformokat támogat a Syrex?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">A Syrex támogatja a zenei lejátszást népszerű platformokról, mint a YouTube, SoundCloud stb.</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">4. Tudja a Syrex moderálni a szerveremet?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">Igen! A Syrex beépített moderálási eszközökkel rendelkezik, amelyek segítenek a szerver kezelésekor. Beállíthatsz parancsokat a spam, figyelmeztetések és más moderálási feladatok kezelésére.</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">5. Miért válassz minket?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">A Syrex nem csupán egy egyszerű bot – megbízható társ a Discord világában. Gyors, könnyen használható és folyamatosan frissül, a legjobb szolgáltatást nyújtja közösséged számára. Csatlakozz a Syrex közösséghez, és tapasztalj meg egy új dimenziót a Discordon!</p>
+            </div>
+            <div class="topic">
+                <div class="open">
+                    <h2 class="question">6. Közösségi támogatás?</h2>
+                    <span class="faq-t"></span>
+                </div>
+                <p class="answer">Lépj be egy dedikált támogatói szerverre a segítségért és visszajelzésért. Csatlakozz egy felhasználói közösséghez, hogy megoszthasd a tippeket és tapasztalatokat.</p>
+            </div>
+            <div class="curve">
+                <path fill-opacity="1"
+                    d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- faq vége -->
+    <div id="support"></div>
+    <!-- támogatási szerver -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Syrex Discord Szervere (Jelenleg nem elérhető)</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- helyettesítsd a saját szerver widgeteddel és állítsd a szélességet 100%-ra -->
+        <iframe src="https://discord.com/widget?id=1293987522665517198&theme=dark" width="100%" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    <!-- támogatási szerver vége -->
+    <div class="curve">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- lábléc -->
+    <footer>
+        <div class="wrapper">
+            <div class="foot">
+                <h1>Syrex</h1>
+                <br>
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="#top">Kezdőlap</a></li>
+                        <li><a href="#features">Funkciók</a></li>
+                        <li><a href="#commands">Parancsok</a></li>
+                        <li><a href="#faq">Gyakran Ismételt Kérdések</a></li>
+                        <li><a href="#support">Támogatás</a></li>
+                    </ul>
+                </nav>
+                <br>
+                <h4>Copyright © 2021 - 2024</h4>
+                <div class="socials">
+                    <a href="https://discord.com/invite/your-discord-link" target="_blank">
+                        <img src="img/Discord-Logo.png" alt="Discord Logo" />
+                    </a>
+                    <a href="https://twitter.com/your-twitter-link" target="_blank">
+                        <img src="img/twitter-logo.png" alt="Twitter Logo" />
+                    </a>
+                </div>
+                <button class="home-btn" onclick="window.location.href='https:google.com'">
+                    Hívd be a botot
+                </button>
+                <br>
+            </div>
+        </div>
+    </footer>
+    <!-- lábléc vége -->
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+</html>
